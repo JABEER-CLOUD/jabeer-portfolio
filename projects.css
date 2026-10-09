@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    border: 3px solid #39FF14;
+}
+
+
+/* ================= HEADER ================= */
+
+.port {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: #39FF14;
+    border-bottom: 3px solid #39FF14;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+}
+
+.portfolio {
+    font-size: 45px;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.portfolio-container a {
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.portfolio-container a:hover {
+    color: #39FF14;
+}
+
+
+/* ================= PROJECT HEADING ================= */
+
+.myprojects {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.myprojects h1 {
+    color: #39FF14;
+    font-size: 50px;
+}
+
+.myprojects p {
+    color: #cfcfcf;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* ================= PROJECT OPTIONS ================= */
+
+.project-options {
+    width: 80%;
+
+    margin: 70px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+
+/* ================= PROJECT BOX ================= */
+
+.project-box {
+    min-height: 350px;
+
+    padding: 50px 40px;
+
+    border: 2px solid rgba(57, 255, 20, 0.5);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(57, 255, 20, 0.08),
+            rgba(255, 255, 255, 0.02)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+
+/* ================= HOVER ================= */
+
+.project-box:hover {
+
+    transform: translateY(-12px);
+
+    border-color: #39FF14;
+
+    box-shadow:
+        0 15px 40px rgba(57, 255, 20, 0.2),
+        0 0 25px rgba(57, 255, 20, 0.1);
+
+}
+
+
+/* ================= TITLE ================= */
+
+.project-box h2 {
+
+    color: #39FF14;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.project-box p {
+
+    color: #cfcfcf;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.project-box a {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: 2px solid #39FF14;
+
+    border-radius: 30px;
+
+    color: #39FF14;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.project-box a:hover {
+
+    background-color: #39FF14;
+
+    color: black;
+
+    box-shadow:
+        0 0 10px #39FF14,
+        0 0 25px rgba(57, 255, 20, 0.5);
+
+    transform: translateX(5px);
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+    .port {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+    .portfolio {
+
+        font-size: 38px;
+
+    }
+
+    .portfolio-container {
+
+        gap: 25px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .portfolio-container a {
+
+        font-size: 20px;
+
+    }
+
+    .myprojects {
+
+        margin-top: 50px;
+
+    }
+
+    .myprojects h1 {
+
+        font-size: 38px;
+
+    }
+
+    .myprojects p {
+
+        font-size: 17px;
+
+        padding: 0 20px;
+
+    }
+
+    .project-options {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .port {
+
+        padding: 15px;
+
+    }
+
+    .portfolio {
+
+        font-size: 30px;
+
+    }
+
+    .portfolio-container {
+
+        gap: 15px;
+
+    }
+
+    .portfolio-container a {
+
+        font-size: 17px;
+
+    }
+
+    .myprojects {
+
+        margin-top: 35px;
+
+    }
+
+    .myprojects h1 {
+
+        font-size: 30px;
+
+    }
+
+    .myprojects p {
+
+        font-size: 15px;
+
+    }
+
+    .project-options {
+
+        width: 90%;
+
+        margin-top: 40px;
+
+    }
+
+    .project-box {
+
+        min-height: 300px;
+
+        padding: 35px 25px;
+
+    }
+
+    .project-box h2 {
+
+        font-size: 25px;
+
+    }
+
+    .project-box p {
+
+        font-size: 16px;
+
+    }
+
+}

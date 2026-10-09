@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+
+    <h1>DIGITAL CALCULATOR</h1>
+    <table border="1">
+        <tr>
+            <th colspan="4">
+                <input type="text" id="display" readonly>
+            </th>
+        </tr>
+
+        <tr>
+            <td><button onclick="clearDisplay()">C</button></td>
+            <td><button onclick="displayValue('%')">%</button></td>
+            <td><button onclick="displayValue('/')">/</button></td>
+            <td><button onclick="deleteValue()">⌫</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="displayValue('7')">7</button></td>
+            <td><button onclick="displayValue('8')">8</button></td>
+            <td><button onclick="displayValue('9')">9</button></td>
+            <td><button onclick="displayValue('*')">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="displayValue('4')">4</button></td>
+            <td><button onclick="displayValue('5')">5</button></td>
+            <td><button onclick="displayValue('6')">6</button></td>
+            <td><button onclick="displayValue('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="displayValue('1')">1</button></td>
+            <td><button onclick="displayValue('2')">2</button></td>
+            <td><button onclick="displayValue('3')">3</button></td>
+            <td><button onclick="displayValue('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="displayValue('0')">0</button></td>
+            <td><button onclick="displayValue('.')">.</button></td>
+            <td colspan="2"><button onclick="calculate()">=</button></td>
+        </tr>
+    </table>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

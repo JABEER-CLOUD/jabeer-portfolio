@@ -1,0 +1,430 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding-top:100px;
+    background:#eaeded;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    height:60px;
+    background:#131921;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    padding:0 10px;
+}
+
+.border{
+    border:1px solid transparent;
+    cursor:pointer;
+}
+
+.border:hover{
+    border:1px solid white;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.nav-logo{
+    width:115px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:4px;
+}
+
+.nav-logo img{
+    width:100px;
+    display:block;
+}
+
+/* ==========================
+   ADDRESS
+========================== */
+
+.nav-address{
+    width:165px;
+    height:50px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding-left:8px;
+
+    margin-right:6px;
+}
+
+.add-first{
+    font-size:12px;
+    color:#cccccc;
+    margin-left:18px;
+}
+
+.add-icon{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.add-second{
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.nav-search{
+    flex:1;
+    display:flex;
+    align-items:center;
+    height:40px;
+    border-radius:4px;
+    overflow:hidden;
+}
+
+.nav-search:hover{
+    outline:3px solid orange;
+}
+
+.search-select{
+    width:55px;
+    height:100%;
+    border:none;
+    outline:none;
+    background:#f3f3f3;
+    text-align:center;
+}
+
+.search-input{
+    flex:1;
+    height:100%;
+    border:none;
+    outline:none;
+    padding-left:12px;
+    font-size:15px;
+}
+
+.search-icon{
+    width:50px;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#febd69;
+    color:#111;
+    cursor:pointer;
+}
+
+/* ==========================
+   LANGUAGE
+========================== */
+
+.nav-language{
+    width:70px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+
+    margin-left:8px;
+}
+
+.nav-language img{
+    width:22px;
+}
+
+.nav-language span{
+    font-weight:bold;
+}
+
+/* ==========================
+   SIGN IN
+========================== */
+
+.nav-signin{
+    width:135px;
+    height:50px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding-left:8px;
+
+    margin-left:4px;
+}
+
+.nav-signin span{
+    font-size:12px;
+}
+
+.nav-second{
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* ==========================
+   ORDERS
+========================== */
+
+.nav-orders{
+    width:85px;
+    height:50px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding-left:8px;
+
+    margin-left:4px;
+}
+
+.nav-orders span{
+    font-size:12px;
+}
+
+/* ==========================
+   CART
+========================== */
+
+.nav-cart{
+
+    width:85px;
+    height:50px;
+
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+
+    position:relative;
+
+    gap:4px;
+
+    font-weight:bold;
+}
+
+.nav-cart i{
+    font-size:30px;
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:5px;
+    left:22px;
+
+    color:#f08804;
+
+    font-weight:bold;
+}
+
+/* ==========================
+   PANEL
+========================== */
+
+.panel{
+
+    height:40px;
+
+    background:#232f3e;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 10px;
+}
+
+.panel-all{
+
+    width:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:bold;
+}
+
+.panel-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    overflow:hidden;
+}
+
+.panel-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    white-space:nowrap;
+}
+
+.panel-links a:hover{
+
+    text-decoration:underline;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+    .nav-search{
+        max-width:500px;
+    }
+
+    .panel-links{
+        gap:12px;
+    }
+}
+
+@media(max-width:900px){
+
+    .nav-address,
+    .nav-language,
+    .nav-orders{
+        display:none;
+    }
+
+    .panel-links{
+        overflow:auto;
+    }
+}
+/* ================= HERO ================= */
+
+.bluebg{
+    width:100%;
+    height:420px;
+    overflow:hidden;
+}
+
+.bluebg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* ================= CARDS ROW ================= */
+
+.cards{
+    width:97%;
+    margin:auto;
+    margin-top:-250px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    position:relative;
+    z-index:10;
+}
+
+/* ================= CARD ================= */
+
+.watch-card,
+.appliances,
+.homefurniture,
+.earphones{
+    width:24%;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    min-height:430px;
+}
+
+/* ================= HEADING ================= */
+
+.watch-card h2,
+.appliances h2,
+.homefurniture h2,
+.earphones h2{
+    font-size:21px;
+    font-weight:700;
+    line-height:28px;
+    margin-bottom:15px;
+}
+
+/* ================= IMAGE GRID ================= */
+
+.img-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.img-grid img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    display:block;
+}
+
+/* ================= LINKS ================= */
+
+.watch-card a,
+.appliances a,
+.homefurniture a,
+.earphones a{
+    display:inline-block;
+    margin-top:18px;
+    text-decoration:none;
+    color:#007185;
+    font-size:14px;
+}
+
+.watch-card a:hover,
+.appliances a:hover,
+.homefurniture a:hover,
+.earphones a:hover{
+    color:#c7511f;
+}

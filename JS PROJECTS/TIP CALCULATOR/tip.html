@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="./tip.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heading">
+            <span>DINNER</span>
+            <h1>TIP CALCULATOR</h1>
+            <p>Calculate your perfect tip</p>
+        </div>
+
+        <div class="form">
+
+            <div class="input-group">
+                <label for="billAmount">Bill Amount</label>
+                <div class="input-box">
+                    <span>₹</span>
+                    <input
+                        type="number"
+                        id="billAmount"
+                        placeholder="Enter bill amount"
+                    >
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label for="service">Service Rating</label>
+
+                    <select id="service">
+                        <option value="1">Poor</option>
+                        <option value="2">Average</option>
+                        <option value="3">Good</option>
+                        <option value="4">Excellent</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="people">People</label>
+
+                    <input
+                        type="number"
+                        id="people"
+                        placeholder="No. of people"
+                        min="1"
+                    >
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label for="mealType">Meal Type</label>
+
+                <select id="mealType">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner" selected>Dinner</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="result">
+
+            <div class="result-title">
+                <span></span>
+                <h2>Your Bill</h2>
+                <span></span>
+            </div>
+
+            <div class="result-row">
+                <p>Tip Amount</p>
+                <strong id="tipAmount">₹0.00</strong>
+            </div>
+
+            <div class="result-row">
+                <p>Total Amount</p>
+                <strong id="totalAmount">₹0.00</strong>
+            </div>
+
+            <div class="result-row highlight">
+                <p>Per Person</p>
+                <strong id="amountPerPerson">₹0.00</strong>
+            </div>
+
+        </div>
+
+        <button id="calculateBtn">
+            CALCULATE TIP
+        </button>
+
+        <p class="footer">Enjoy your meal ♡</p>
+
+    </div>
+
+    <script src="./tip.js"></script>
+
+</body>
+</html>

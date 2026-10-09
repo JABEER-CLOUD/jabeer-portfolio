@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RedBus Clone</title>
+<link rel="stylesheet" href="./redbus.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="left">
+
+<img src="./REDBUS-LOGO.jfif" class="logo">
+
+<a href="#">Things to Do</a>
+
+</div>
+
+<div class="right">
+
+<a href="#">Help</a>
+
+ <div class="country-dropdown">
+
+    <div class="selected">
+        <img src="./indian flag.png" class="flag">
+        <span>▼</span>
+    </div>
+
+    <div class="country-list">
+        <div class="country">
+            <img src="./indian flag.png" class="flag">
+            <span>India</span>
+        </div>
+
+        <div class="country">
+            <img src="./USA.png" class="flag">
+            <span>USA</span>
+        </div>
+
+        <div class="country">
+            <img src="./SPAIN.png" class="flag">
+            <span>SPAIN</span>
+        </div>
+
+        <div class="country">
+            <img src="./uae.png" class="flag">
+            <span>UAE</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="currency-dropdown">
+
+    <div class="selected">
+        <span>₹ INR</span>
+        <span>▼</span>
+    </div>
+
+    <div class="currency-list">
+
+        <div class="currency">
+            <span>₹</span>
+            <span>INR - Indian Rupee</span>
+        </div>
+
+        <div class="currency">
+            <span>$</span>
+            <span>USD - US Dollar</span>
+        </div>
+
+        <div class="currency">
+            <span>€</span>
+            <span>EUR - Euro (Spain)</span>
+        </div>
+
+        <div class="currency">
+            <span>د.إ</span>
+            <span>AED - UAE Dirham</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="managebooking-dropdown">
+
+    <div class="managebooking">
+        <span>Manage Booking</span>
+        <span>▼</span>
+    </div>
+
+    <div class="managebooking-list">
+
+        <div class="booking-item">
+            Cancel Ticket
+        </div>
+
+        <div class="booking-item">
+            Show My Ticket
+        </div>
+
+        <div class="booking-item">
+            Email Ticket
+        </div>
+
+    </div>
+
+</div>
+
+<a href="#">Login</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Book your journey now with the world's largest bus platform</h1>
+
+</section>
+<div class="search-box">
+
+    <div class="search-item"> 
+        <div>
+            <label>Source</label>
+            <input type="text" placeholder="Ex: 📍Dubai">
+        </div>
+    </div>
+
+    <div class="swap">
+         
+    </div>
+
+    <div class="search-item">
+        
+        <div>
+            <label>Destination</label>
+            <input type="text" placeholder="Ex: 📍London Airport">
+        </div>
+    </div>
+
+    <div class="search-item">
+        
+        <div>
+            <label>Date</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <div class="search-item">
+         
+        <div>
+            <label>Return Date</label>
+            <input type="date">
+            <small>Optional</small>
+        </div>
+    </div>
+
+    <button class="search-btn">SEARCH</button>
+
+</div>
+
+    <div class="phase3">
+
+    <div class="card">
+        <img src="./million36.svg" alt="">
+        <p class="heading">36 Million</p>
+        <p class="subheading">happy customers globally</p>
+    </div>
+
+    <div class="card">
+        <img src="./over5000.svg" alt="">
+        <p class="heading">Over 5000</p>
+        <p class="subheading">bus companies worldwide</p>
+    </div>
+
+    <div class="card">
+        <img src="./twolackhs peoples.svg" alt="">
+        <p class="heading">200,000+</p>
+        <p class="subheading">tickets booked everyday</p>
+    </div>
+
+</div>
+
+<div class="airport-section">
+
+    <div class="airport-image">
+        <img src="./AirportHome.svg" alt="Airport Transfer">
+    </div>
+
+    <div class="airport-content">
+
+        <p class="intro">INTRODUCING</p>
+
+        <h1>AIRPORT TRANSFERS</h1>
+
+        <p class="description">
+            You can travel low cost airport shuttles,
+            trains & buses to and from your
+            accommodation.
+        </p>
+
+    </div>
+
+    <div class="airport-button">
+        <button>BOOK NOW</button>
+    </div>
+
+</div>
+
+<!-- ================= FEATURES ================= -->
+
+<div class="features">
+
+    <div class="feature-box">
+        <img src="./worldwide.svg" alt="">
+        <div>
+            <h3>Worldwide coverage</h3>
+            <p>Find affordable travel tickets across the world, all at one place.</p>
+        </div>
+    </div>
+
+    <div class="feature-box">
+        <img src="./anxiety free.svg" alt="">
+        <div>
+            <h3>Anxiety-free travel</h3>
+            <p>Book your trip with complete confidence and travel stress free.</p>
+        </div>
+    </div>
+
+    <div class="feature-box">
+        <img src="./no hidden.svg" alt="">
+        <div>
+            <h3>No hidden charges</h3>
+            <p>Pay exactly what you see. No extra or hidden fees.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ================= ROUTES ================= -->
+
+<h2 class="route-title">Top Travelled Bus Routes</h2>
+
+<div class="route-container">
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./taj mahal.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>Delhi to Agra</h4>
+    </div>
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./statue of liberty.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>New York to Washington</h4>
+    </div>
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./burj arab.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>Dubai to Abu Dhabi</h4>
+    </div>
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./barcelona.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>Madrid to Barcelona</h4>
+    </div>
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./eiffel tower.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>Paris to Lyon</h4>
+    </div>
+
+    <div class="route-card">
+        <div class="image-box">
+            <img src="./sydney.jfif">
+        </div>
+        <p class="small">Buses from</p>
+        <h4>Sydney to Melbourne</h4>
+    </div>
+
+</div>
+
+<!-- ================= IT'S ALL ABOUT TRAVEL ================= -->
+
+<div class="travel-section">
+
+    <h2>It's all about travel</h2>
+
+    <div class="travel-card">
+
+        <div class="travel-text">
+            redBus is part of Makemytrip group which has been listed on
+            <b>NASDAQ since 2010</b>
+        </div>
+
+        <div class="travel-img">
+            <img src="./travel1.svg" alt="">
+        </div>
+
+    </div>
+
+    <div class="travel-card">
+
+        <div class="travel-img left-img">
+            <img src="./travel2.svg" alt="">
+        </div>
+
+        <div class="travel-text right-text">
+            We have two partner companies
+            <b>makemytrip.com</b> and
+            <b>goibibo.com</b>
+        </div>
+
+    </div>
+
+    <div class="travel-card">
+
+        <div class="travel-text">
+            Helping people book travel and accommodation for
+            <b>more than 20 years</b>
+        </div>
+
+        <div class="travel-img">
+            <img src="./travel3.svg" alt="">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="review-section">
+
+    <h2>Here's what a few of our customers have to say about us</h2>
+
+    <div class="review-slider">
+
+        <div class="review-track">
+
+            <!-- 1 -->
+            <div class="review-card">
+                <h3>Awesome travel experience</h3>
+                <p>Booked in minutes. The journey was comfortable and everything was on time.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Md Jabeer Ahmed</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+            <!-- 2 -->
+            <div class="review-card">
+                <h3>Amazing service always</h3>
+                <p>Excellent support and affordable prices every time.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Sheeraz Ahmed Khan</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+            <!-- 3 -->
+            <div class="review-card">
+                <h3>Bus was clean and the journey was smooth</h3>
+                <p>Seats were clean and the ride was enjoyable.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Roshan Zameer</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+            <!-- 4 -->
+            <div class="review-card">
+                <h3>All time favourite bus</h3>
+                <p>My first choice whenever I travel.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Adnan</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+            <!-- 5 -->
+            <div class="review-card">
+                <h3>Clean and safe rides</h3>
+                <p>Very clean buses with polite staff.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Hamza</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+            <!-- 6 -->
+            <div class="review-card">
+                <h3>Punctual buses</h3>
+                <p>Departure and arrival were perfectly on time.</p>
+                <div class="rating">★★★★★ <span>5.0</span></div>
+                <h4>Syed Hyder</h4>
+                <small>redBus Customer since 2018</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Left -->
+        <div class="footer-about">
+
+            <img src="./REDBUS-LOGO.jfif" class="footer-logo">
+
+            <p>
+                redBus is the world's largest online bus
+                ticket booking service trusted by over
+                25 million happy customers globally.
+                redBus offers bus ticket booking
+                through its website, iOS and Android
+                mobile apps for all major routes.
+            </p>
+
+            <div class="social-icons">
+                <img src="./facebook.svg" alt="">
+                <img src="./instagram.svg" alt="">
+                <img src="./x.svg" alt="">
+            </div>
+
+        </div>
+
+        <!-- About -->
+        <div class="footer-column">
+
+            <h3>About redBus</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Mobile Version</a>
+
+        </div>
+
+        <!-- Info -->
+        <div class="footer-column">
+
+            <h3>Info</h3>
+
+            <a href="#">T & C</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blog</a>
+
+        </div>
+
+        <!-- Global -->
+        <div class="footer-column">
+
+            <h3>Global Sites</h3>
+
+            <a href="#">India</a>
+            <a href="#">Singapore</a>
+            <a href="#">Malaysia</a>
+            <a href="#">Indonesia</a>
+            <a href="#">Peru</a>
+            <a href="#">Colombia</a>
+            <a href="#">Cambodia</a>
+            <a href="#">Vietnam</a>
+
+        </div>
+
+        <!-- Partners -->
+        <div class="footer-column">
+
+            <h3>Our Partners</h3>
+
+            <a href="#">Goibibo Bus</a>
+            <a href="#">Goibibo Hotels</a>
+            <a href="#">Makemytrip Bus</a>
+            <a href="#">Makemytrip Hotels</a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Jabeer-group All rights reserved
+    </p>
+
+</footer>
+
+
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+</body>
+</html>

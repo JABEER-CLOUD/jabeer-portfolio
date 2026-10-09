@@ -1,0 +1,598 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT',
+        Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* ====================== HEADER ====================== */
+
+.port {
+    min-height: 100px;
+    width: 100%;
+
+    background-color: black;
+    color: #39FF14;
+
+    border: 3px solid #39FF14;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    
+}
+
+.portfolio {
+    font-size: 45px;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.portfolio-container a {
+    color: white;
+
+    font-size: 26px;
+
+    text-decoration: underline;
+
+    transition: 0.3s;
+}
+
+.portfolio-container a:hover {
+    color: #39FF14;
+}
+
+
+/* ====================== CONTACT SECTION ====================== */
+
+.subpart {
+    width: 100%;
+
+    min-height: calc(100vh - 100px);
+
+    background-color: black;
+
+    border-left: 3px solid #39FF14;
+    border-right: 3px solid #39FF14;
+    border-bottom: 3px solid #39FF14;
+}
+
+
+/* ====================== CONTACT HEADING ====================== */
+
+.contact h1 {
+    color: #39FF14;
+
+    font-size: 42px;
+
+    text-align: center;
+
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.callme {
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 20px;
+}
+
+
+/* ====================== MAIN CARDS ====================== */
+
+.maincard {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 0 20px;
+}
+
+
+/* ====================== CARD 1 ====================== */
+
+.card1 {
+    border: 3px solid #39FF14;
+
+    width: 400px;
+    min-height: 350px;
+
+    padding: 25px;
+}
+
+.getintouch h3 {
+    text-align: center;
+
+    font-size: 28px;
+
+    color: #39FF14;
+
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 19px;
+
+    margin-bottom: 22px;
+}
+
+.contact-info a {
+    color: #39FF14;
+
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ====================== CARD 2 ====================== */
+
+.card2 {
+    border: 3px solid #39FF14;
+
+    width: 400px;
+    min-height: 350px;
+
+    padding: 25px;
+}
+
+.opposite {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* ====================== INPUTS ====================== */
+
+.opposite input,
+.opposite textarea {
+    width: 100%;
+
+    background-color: black;
+
+    color: white;
+
+    border: 2px solid #39FF14;
+
+    padding: 12px 15px;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+.opposite input {
+    height: 45px;
+}
+
+.opposite textarea {
+    height: 100px;
+
+    resize: none;
+}
+
+.opposite input::placeholder,
+.opposite textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* ====================== INPUT FOCUS ====================== */
+
+.opposite input:focus,
+.opposite textarea:focus {
+    box-shadow: 0 0 8px #39FF14;
+}
+
+
+/* ====================== BUTTON ====================== */
+
+.opposite button {
+    height: 45px;
+
+    background-color: #39FF14;
+
+    color: black;
+
+    border: 2px solid #39FF14;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.opposite button:hover {
+    background-color: black;
+
+    color: #39FF14;
+
+    box-shadow: 0 0 10px #39FF14;
+}
+
+
+/* ====================== FOOTER ====================== */
+
+.footeer {
+    text-align: center;
+
+    padding: 10px 0;
+
+    font-size: 15px;
+}
+
+
+/* ====================================================== */
+/* ====================== LAPTOP ======================== */
+/* ====================================================== */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    /* HEADER */
+
+    .port {
+        padding: 0 25px;
+    }
+
+    .portfolio {
+        font-size: 38px;
+    }
+
+    .portfolio-container {
+        gap: 30px;
+    }
+
+    .portfolio-container a {
+        font-size: 22px;
+    }
+
+
+    /* CONTACT */
+
+    .contact h1 {
+        font-size: 38px;
+        padding-top: 50px;
+    }
+
+    .callme {
+        font-size: 18px;
+    }
+
+
+    /* CARDS */
+
+    .maincard {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .card1,
+    .card2 {
+        width: 380px;
+        padding: 25px;
+    }
+
+    .getintouch h3 {
+        font-size: 25px;
+    }
+
+    .contact-info p {
+        font-size: 17px;
+    }
+}
+
+
+/* ====================================================== */
+/* ====================== TABLET ======================== */
+/* ====================================================== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .port {
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 20px;
+
+        gap: 20px;
+    }
+
+    .portfolio {
+        font-size: 36px;
+
+        text-align: center;
+    }
+
+    .portfolio-container {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px 25px;
+    }
+
+    .portfolio-container a {
+        font-size: 18px;
+    }
+
+
+    /* CONTACT */
+
+    .contact h1 {
+        font-size: 32px;
+
+        padding-top: 40px;
+    }
+
+    .callme {
+        font-size: 17px;
+
+        padding: 0 20px;
+    }
+
+
+    /* CARDS */
+
+    .maincard {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 0 20px;
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+        max-width: 500px;
+
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+    .getintouch h3 {
+        font-size: 25px;
+
+        margin-bottom: 25px;
+    }
+
+    .contact-info p {
+        font-size: 17px;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* INPUTS */
+
+    .opposite input,
+    .opposite textarea {
+        font-size: 16px;
+    }
+}
+
+
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .port {
+        padding: 15px 10px;
+
+        gap: 15px;
+    }
+
+    .portfolio {
+        font-size: 30px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+
+        gap: 10px 18px;
+    }
+
+    .portfolio-container a {
+        font-size: 15px;
+    }
+
+
+    /* CONTACT */
+
+    .contact h1 {
+        font-size: 28px;
+
+        padding-top: 30px;
+    }
+
+    .callme {
+        font-size: 15px;
+
+        padding: 0 15px;
+
+        line-height: 1.5;
+    }
+
+
+    /* CARDS */
+
+    .maincard {
+        padding: 0 12px;
+
+        gap: 15px;
+
+        margin-top: 20px;
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+
+        padding: 20px;
+
+        border-width: 2px;
+    }
+
+
+    /* CARD 1 */
+
+    .getintouch h3 {
+        font-size: 21px;
+
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+
+        margin-bottom: 16px;
+
+        line-height: 1.5;
+    }
+
+
+    /* INPUTS */
+
+    .opposite {
+        gap: 12px;
+    }
+
+    .opposite input {
+        height: 42px;
+    }
+
+    .opposite textarea {
+        height: 100px;
+    }
+
+    .opposite input,
+    .opposite textarea {
+        padding: 10px 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* BUTTON */
+
+    .opposite button {
+        height: 42px;
+
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
+
+    .footeer {
+        font-size: 13px;
+
+        padding: 8px 5px;
+    }
+}
+
+
+/* ====================================================== */
+/* ================= SMALL MOBILE ======================= */
+/* ====================================================== */
+
+@media (max-width: 360px) {
+
+    .portfolio {
+        font-size: 26px;
+    }
+
+    .portfolio-container {
+        gap: 8px 12px;
+    }
+
+    .portfolio-container a {
+        font-size: 14px;
+    }
+
+
+    .contact h1 {
+        font-size: 25px;
+
+        padding-top: 25px;
+    }
+
+    .callme {
+        font-size: 14px;
+    }
+
+
+    .maincard {
+        padding: 0 8px;
+    }
+
+    .card1,
+    .card2 {
+        padding: 15px;
+    }
+
+
+    .getintouch h3 {
+        font-size: 19px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+
+    .opposite input,
+    .opposite textarea {
+        font-size: 13px;
+    }
+
+    .opposite button {
+        font-size: 15px;
+    }
+
+
+    .footeer {
+        font-size: 12px;
+    }
+}

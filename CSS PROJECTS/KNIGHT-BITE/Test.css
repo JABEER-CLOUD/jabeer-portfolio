@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    text-align: right;
+    display: flex;
+    align-items: right;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    gap:40px;
+    padding:20px 50px;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    z-index:100;
+
+     
+}
+img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+
+.logo{
+    width:300px;
+    height:150px;
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:1;
+}
+
+.orderlate{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#feature{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(233, 16, 52);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.feat{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.item img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.item p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.burger-man{
+    position: relative;
+    width: 100%;
+}
+
+#burger-mann{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.burger-man p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+   
+.fbs{
+    position: relative;
+    width: 100%;
+}
+
+.fbs img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#bfs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.connect-section{
+    width:100%;
+    padding:80px 8%;
+    background:#fff;
+}
+
+.connect-section h1{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:60px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.left,
+.middle,
+.right{
+    flex:1;
+    min-width:280px;
+}
+
+.left h2,
+.middle h2,
+.right h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.left p,
+.middle p,
+.middle li,
+.right p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.middle ul{
+    padding-left:20px;
+}
+
+.email-box{
+    display:flex;
+    margin:40px 0;
+}
+
+.email-box input{
+    flex:1;
+    padding:18px;
+    font-size:20px;
+    border:2px solid #888;
+    border-radius:50px 0 0 50px;
+    outline:none;
+}
+
+.email-box button{
+    width:90px;
+    border:none;
+    background:#c26df5;
+    color:#fff;
+    font-size:28px;
+    border-radius:0 50px 50px 0;
+    cursor:pointer;
+}
+
+.social{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social a{
+    text-decoration:none;
+    font-size:20px;
+    color:#ff4d73;
+    font-weight:bold;
+}
+
+@media(max-width:992px){
+
+.contact-container{
+    flex-direction:column;
+}
+
+.connect-section h1{
+    font-size:40px;
+}
+
+}
+
+@media(max-width:600px){
+
+.connect-section{
+    padding:50px 20px;
+}
+
+.connect-section h1{
+    font-size:32px;
+}
+
+.left h2,
+.middle h2,
+.right h2{
+    font-size:25px;
+}
+
+.left p,
+.middle p,
+.middle li,
+.right p{
+    font-size:17px;
+}
+
+.email-box{
+    flex-direction:column;
+}
+
+.email-box input{
+    border-radius:50px;
+    margin-bottom:15px;
+}
+
+.email-box button{
+    width:100%;
+    border-radius:50px;
+    height:60px;
+}
+
+}
